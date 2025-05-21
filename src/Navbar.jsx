@@ -1,14 +1,35 @@
 import React from 'react';
 import './App.css';
 
-const sections = [
-  { id: 'about', label: 'About' },
-  { id: 'education', label: 'Education' },
-  { id: 'experience', label: 'Work' },
-  { id: 'certifications', label: 'Certifications' },
-  { id: 'skills', label: 'Skills' },
-  { id: 'projects', label: 'Projects' },
-  { id: 'contact', label: 'Contact' },
+const navLinks = [
+  {
+    id: "about",
+    title: "Introduction",
+  },
+  {
+    id: "education",
+    title: "Education",
+  },
+  {
+    id: "work",
+    title: "Work",
+  },
+  // {
+  //   id: "certifications",
+  //   title: "Certifications",
+  // },
+  {
+    id: "skills",
+    title: "Skills",
+  },
+  {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
 ];
 
 const Navbar = () => {
@@ -25,10 +46,10 @@ const Navbar = () => {
       <div className="navbar-inner">
         <span className="navbar-logo gradient-text">John Ross</span>
         <ul className="navbar-links">
-          {sections.map((section) => (
-            <li key={section.id}>
-              <a href={`#${section.id}`} onClick={e => handleClick(e, section.id)}>
-                {section.label}
+          {navLinks.map((link) => (
+            <li key={link.id || link.title}>
+              <a href={`#${link.id}`} onClick={e => handleClick(e, link.id)}>
+                {link.title}
               </a>
             </li>
           ))}

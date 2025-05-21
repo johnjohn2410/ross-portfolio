@@ -38,6 +38,11 @@
   --hero-gradient-start: #1e1b4b;
   --hero-gradient-end: #312e81;
   --shadow-color: rgba(0, 0, 0, 0.3);
+
+  /* Adjust timeline list item text color for dark mode */
+  .timeline-content ul li {
+    color: var(--text-color);
+  }
 }
 
 * {
@@ -253,6 +258,10 @@ section h2 {
   margin-bottom: 1rem;
 }
 
+.project-tags span {
+  margin-right: 0.5rem;
+}
+
 .project-links {
   margin-top: 1rem;
   display: flex;
@@ -299,6 +308,51 @@ section h2 {
   background: var(--accent-6);
   color: var(--background-color);
   transform: translateY(-2px);
+}
+
+/* Contact Form Styles */
+.contact-form input,
+.contact-form textarea {
+  background: #1e293b;
+  border: 1px solid #4a5568; /* Slightly lighter border for visibility */
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;
+  color: #f8fafc;
+  width: 100%;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #915eff; /* Focus border color */
+  box-shadow: 0 0 8px rgba(145, 94, 255, 0.6); /* Subtle glow on focus */
+}
+
+.contact-form .form-label {
+  display: block;
+  color: #f8fafc;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form button[type="submit"] {
+  background: linear-gradient(to right, #915EFF, #56ccf2);
+  color: white;
+  padding: 0.8rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(145, 94, 255, 0.3);
+}
+
+.contact-form button[type="submit"]:hover {
+  opacity: 0.9;
+  box-shadow: 0 6px 12px rgba(145, 94, 255, 0.4);
 }
 
 /* Animations */
