@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { Toaster, toast } from 'react-hot-toast';
 import Confetti from 'react-confetti';
-import resume from './assets/John Ross-SWE Resume_2024.1.pdf';
+import resumePDF from './assets/resume.pdf';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser, faEnvelope, faComment, faPaperPlane, faSpinner, faPhone, faMapMarkerAlt, faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -140,8 +140,8 @@ const Contact = () => {
             </div>
             <div className="flex items-center text-[#f8fafc] mb-3">
               <FontAwesomeIcon icon={faGithub} className="mr-3 text-[#915eff]" />
-              <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" className="text-[#56ccf2] hover:text-[#915eff] transition-colors duration-300 break-all">
-                github.com/your-profile
+              <a href="https://github.com/johnjohn2410" target="_blank" rel="noopener noreferrer" className="text-[#56ccf2] hover:text-[#915eff] transition-colors duration-300 break-all">
+                @johnjohn2410
               </a>
             </div>
           </div>
@@ -252,7 +252,7 @@ const Contact = () => {
       {/* Resume Link at the bottom */}
       <div className="mt-12 flex justify-center">
         <a
-          href={resume}
+          href={new URL('./assets/resume.pdf', import.meta.url).href}
           target="_blank"
           rel="noopener noreferrer"
           className="px-8 py-4 rounded-full font-bold text-white bg-gradient-to-r from-purple-500 to-blue-500 shadow-lg hover:from-purple-600 hover:to-blue-600 transition text-xl flex items-center"
