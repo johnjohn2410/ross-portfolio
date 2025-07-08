@@ -49,7 +49,7 @@ function App() {
             />
           </div>
           <h1>
-            <TypingEffect text="Hello, my name is John Ross, I'm a software engineer with 4 years experience" speed={50} />
+            <TypingEffect text="Hello, my name is John Ross, I'm a software engineer with 2 years experience" speed={50} />
           </h1>
         </div>
       </motion.section>

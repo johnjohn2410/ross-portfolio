@@ -60,7 +60,7 @@ const About = () => {
             <li className="flex items-start">
               <span className="mr-4 text-2xl flex-shrink-0">🚀</span>
               <span>
-                With over 4 years of freelance and experience, I've delivered full-stack, mobile, and cloud-based projects across diverse domains.
+                With over 2 years of freelance and experience, I've delivered full-stack, mobile, and cloud-based projects across diverse domains.
               </span>
             </li>
             <li className="flex items-start">
