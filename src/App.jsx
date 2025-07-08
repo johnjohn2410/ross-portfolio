@@ -77,15 +77,9 @@ function App() {
             <ul>
               <li>C++</li>
               <li>Python</li>
-              <li>SQL</li>
               <li>Java</li>
-              <li>C#</li>
               <li>JavaScript</li>
-              <li>HTML/CSS</li>
-              <li>MatLab</li>
               <li>Rust</li>
-              <li>Haskell</li>
-              <li>Ada</li>
             </ul>
           </div>
           <div className="skill-card">
@@ -94,16 +88,6 @@ function App() {
               <li>Django</li>
               <li>React</li>
               <li>Node.js</li>
-              <li>Express</li>
-              <li>Flask</li>
-              <li>JUnit</li>
-              <li>WordPress</li>
-              <li>Material-UI</li>
-              <li>FastAPI</li>
-              <li>Docker</li>
-              <li>Kubernetes</li>
-              <li>AWS</li>
-              <li>CI/CD</li>
             </ul>
           </div>
           <div className="skill-card">
@@ -111,11 +95,8 @@ function App() {
             <ul>
               <li>PyTorch</li>
               <li>TensorFlow</li>
-              <li>OpenCV</li>
-              <li>NumPy</li>
-              <li>Scikit-Learn</li>
-              <li>MONAI</li>
               <li>U-NET</li>
+              <li>MONAI</li>
             </ul>
           </div>
         </div>
